@@ -3,9 +3,7 @@ python:
   - "2.6"
   - "2.7"
 install:
-  - sudo pip install django flake8
-before_script:
-  - python manage.py migrate
+  - pip install django flake8
 script:
   - python manage.py test
   - flake8 --exclude polls/migrations/,manage.py  .
