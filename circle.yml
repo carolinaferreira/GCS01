@@ -1,6 +1,8 @@
 machine:
+  time_zone:
+    - America/Los_Angeles
   python:
-    version: 2.6 2.7
+    version: 2.7.5
 dependecies:
   pre:
    - pip install PIL
