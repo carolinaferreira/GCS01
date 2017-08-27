@@ -2,7 +2,7 @@ machine:
   timezone:
     America/Los_Angeles
   python:
-    version: pypy-2.6.0
+    version: pypy-2.7.0
 dependecies:
   - pip install django
   - pip install django flake8
