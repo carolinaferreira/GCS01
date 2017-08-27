@@ -4,12 +4,9 @@ machine:
   python:
     version: pypy-2.6.0
 dependecies:
-  - pip install -q Django==1.11.4
-  - pip install django flake8
-compile:
-  override:
-    - python manage.py migrate
-test:
-  override:
-    - python manage.py test
-    - flake8 --exclude polls/migrations/,manage.py  .
+  pre:
+    - pip install -q Django==1.11.4
+    - pip install django flake8
+  post:
+    - python3 manage.py makemigrations
+    - python3 manage.py migrate
