@@ -5,6 +5,7 @@ machine:
     version: 2.7.5
 dependecies:
   pre:
+   - pip install PIL
    - pip install django flake8
 compile:
   - python manage.py migrate
