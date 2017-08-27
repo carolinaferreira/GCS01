@@ -1,6 +1,4 @@
 machine:
-  time_zone:
-    - America/Los_Angeles
   python:
     version: 2.7.5
 dependecies:
