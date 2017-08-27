@@ -4,7 +4,7 @@ machine:
   python:
     version: pypy-2.6.0
 dependecies:
-  - pip install django
+  - pip install -q Django==1.11.4
   - pip install django flake8
 compile:
   override:
