@@ -1,0 +1,14 @@
+machine:
+  timezone:
+    America/Los_Angeles
+  python:
+    version: 2.7.5
+dependecies:
+  pre:
+   - pip install django flake8
+compile:
+  - python manage.py migrate
+test:
+  override:
+    - python manage.py test
+    - flake8 --exclude polls/migrations/,manage.py  .
