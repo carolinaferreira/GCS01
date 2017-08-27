@@ -1,8 +1,9 @@
 machine:
-  post:
-    - pyenv global 2.6 2.7
+  python:
+    version: 2.6 2.7
 dependecies:
   pre:
+   - pip install PIL
    - pip install django flake8
 compile:
   - python manage.py migrate
